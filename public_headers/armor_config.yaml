@@ -1,0 +1,9 @@
+project: resource-turner
+
+branches:
+    main:
+        mode: blocking
+        headers:
+            - Core/Modula/Common/Include/Common.h
+            - Core/Modula/Common/Include/ErrCodes.h
+            - Core/Modula/Common/Include/Utils.h

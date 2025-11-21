@@ -1,0 +1,12 @@
+name: Run ARMOR
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+jobs:
+  armor_run_step:
+    uses: LinuxIntegration/armor_github_integration/.github/workflows/armor_run.yml@main
+    with:
+      head_sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      base_sha: ${{ github.event.pull_request.base.sha || 'HEAD~1' }}

@@ -26,6 +26,8 @@ enum RequestType {
     REQ_SIGNAL_RELAY
 };
 
+int a;
+
 /**
  * @enum Permissions
  * @brief Certain resources can be accessed only by system clients and some which have
@@ -62,7 +64,8 @@ enum Policy {
     HIGHER_BETTER, //!< This policy first applies the request writing the highest value to the node.
     LOWER_BETTER, //!< Self-explanatory. Works exactly opposite of the higher is better policy.
     LAZY_APPLY, //!< The requests are applied in a first-in-first-out manner.
-    PASS_THROUGH
+    PASS_THROUGH,
+    TEST_FILE
 };
 
 enum TranslationUnit {
