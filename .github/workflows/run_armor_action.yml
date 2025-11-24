@@ -49,4 +49,4 @@ jobs:
           ref:        ${{ steps.ev.outputs.ref }}
           repo:       ${{ steps.ev.outputs.repo }}
           actor:      ${{ steps.ev.outputs.actor }}
-          repo-token: ${{ secrets.PAT }}
+          repo-token: ${{ secrets.QCOMLNXCI_PAT }}
