@@ -26,7 +26,6 @@ enum RequestType {
     REQ_SIGNAL_RELAY
 };
 
-int a;
 
 /**
  * @enum Permissions
