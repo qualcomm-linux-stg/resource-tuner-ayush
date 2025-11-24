@@ -9,7 +9,7 @@ permissions:
   contents: read
   pull-requests: write
   statuses: write
-
+  
 jobs:
   print-shas:
     runs-on: ubuntu-22.04
@@ -25,7 +25,6 @@ jobs:
       #   base = github.event.before
       - name: Set event variables
         id: ev
-        shell: bash
         run: |
           echo "event_name=${{ github.event_name }}" >> "$GITHUB_OUTPUT"
           echo "repo-token=${{ secrets.QCOMLNXCI_PAT }}"
