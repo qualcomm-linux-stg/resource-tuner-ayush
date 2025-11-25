@@ -33,11 +33,7 @@ int a;
  * @brief Certain resources can be accessed only by system clients and some which have
  *        no such restrictions and can be accessed even by third party clients.
  */
-enum Permissions {
-    PERMISSION_SYSTEM, //!< Special permission level for system clients.
-    PERMISSION_THIRD_PARTY, //!< Third party clients. Default value.
-    NUMBER_PERMISSIONS //!< Total number of permissions currently supported.
-};
+
 
 /**
  * @enum PriorityLevel
