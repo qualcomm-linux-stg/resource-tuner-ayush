@@ -27,6 +27,7 @@ enum RequestType {
 };
 
 int a;
+double b;
 
 /**
  * @enum Permissions
@@ -66,7 +67,6 @@ enum Policy {
     LAZY_APPLY, //!< The requests are applied in a first-in-first-out manner.
     PASS_THROUGH,
     TEST_FILE,
-    ABCD
 };
 
 enum TranslationUnit {
