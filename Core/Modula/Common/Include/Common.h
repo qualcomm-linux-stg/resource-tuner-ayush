@@ -60,7 +60,7 @@ enum RequestPriority {
     TEST_ENUM
 };
 
-double b;
+
 
 /**
  * @enum Modes
