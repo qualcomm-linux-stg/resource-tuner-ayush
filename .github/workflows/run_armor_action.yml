@@ -22,7 +22,8 @@ jobs:
       #   base = github.event.pull_request.base.sha
       # For push:
       #   head = github.event.after
-      #   base = github.event.before
+      #   base = github.event.before\
+      
       - name: Set event variables
         id: ev
         run: |
