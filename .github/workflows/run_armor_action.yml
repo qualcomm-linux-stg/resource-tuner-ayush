@@ -49,4 +49,3 @@ jobs:
           base-sha:   ${{ steps.ev.outputs.base_sha }}
           ref:        ${{ steps.ev.outputs.ref }}
           repo:       ${{ steps.ev.outputs.repo }}
-          actor:      ${{ steps.ev.outputs.actor }}
