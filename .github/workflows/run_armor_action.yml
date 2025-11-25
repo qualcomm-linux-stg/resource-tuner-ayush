@@ -41,7 +41,7 @@ jobs:
           echo "actor=${{ github.actor }}" >> "$GITHUB_OUTPUT"
 
       - name: Run ARMOR Tool
-        uses: qualcomm-linux-stg/armor@main
+        uses: qualcomm-linux-stg/armor@coral_testing
         with:
           event-name: ${{ steps.ev.outputs.event_name }}
           repo-token: ${{ secrets.QCOMLNXCI_PAT }}
