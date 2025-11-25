@@ -60,7 +60,6 @@ enum RequestPriority {
     TEST_ENUM
 };
 
-int a;
 double b;
 
 /**
