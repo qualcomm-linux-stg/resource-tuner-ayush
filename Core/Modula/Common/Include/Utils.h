@@ -10,7 +10,7 @@
 
 #include <string>
 
-#include "ErrCodes.h"
+
 
 /**
  * @enum RequestType
