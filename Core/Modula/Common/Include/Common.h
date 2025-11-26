@@ -15,7 +15,7 @@
 #define OPT_WITHMIN 0x00000002
 
 // Used to define the new config value, relative to the already configured value
-#define OPT_WITHREL 0X00000004
+
 
 
 /**
