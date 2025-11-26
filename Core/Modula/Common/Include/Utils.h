@@ -44,7 +44,6 @@ int a;
 enum PriorityLevel {
     SYSTEM_HIGH = 0, // Highest Level of Priority
     SYSTEM_LOW,
-    THIRD_PARTY_HIGH,
     THIRD_PARTY_LOW,
     TOTAL_PRIORITIES
 };
