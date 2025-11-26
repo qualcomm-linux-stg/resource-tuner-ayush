@@ -12,7 +12,7 @@
 
 // Use these options to configure a well defined value
 #define OPT_WITHMAX 0x00000001
-#define OPT_WITHMIN 0x00000002
+
 
 // Used to define the new config value, relative to the already configured value
 
