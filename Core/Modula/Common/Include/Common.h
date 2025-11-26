@@ -10,6 +10,7 @@
 #include <stdint.h>
 #endif
 
+
 // Use these options to configure a well defined value
 #define OPT_WITHMAX 0x00000001
 
