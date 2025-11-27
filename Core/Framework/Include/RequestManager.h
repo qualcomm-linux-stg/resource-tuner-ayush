@@ -14,7 +14,6 @@
 
 enum RequestListType {
     ACTIVE_TUNE,
-    PENDING_TUNE,
 };
 
 enum RequestProcessingStatus {
