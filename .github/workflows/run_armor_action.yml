@@ -1,9 +1,9 @@
 name: Run ARMOR via action
 on:
   push:
-    branches: [ main ]
+    branches: [ testing_branch ]
   pull_request_target:
-    branches: [ main ]
+    branches: [ testing_branch ]
 
 permissions:
   contents: read

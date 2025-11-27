@@ -27,6 +27,7 @@ enum RequestType {
 };
 
 int a;
+double b;
 
 /**
  * @enum Permissions
@@ -65,8 +66,7 @@ enum Policy {
     LOWER_BETTER, //!< Self-explanatory. Works exactly opposite of the higher is better policy.
     LAZY_APPLY, //!< The requests are applied in a first-in-first-out manner.
     PASS_THROUGH,
-    TEST_FILE,
-    ABCD
+    TEST_FILE
 };
 
 enum TranslationUnit {
