@@ -31,14 +31,15 @@ jobs:
           if [[ "${{ github.event_name }}" == "pull_request_target" ]]; then
             echo "head_sha=${{ github.event.pull_request.head.sha }}" >> "$GITHUB_OUTPUT"
             echo "base_sha=${{ github.event.pull_request.base.sha }}" >> "$GITHUB_OUTPUT"
+            echo "branch_name=${{ github.head_ref }}" >> "$GITHUB_OUTPUT"
           else
             # push
             echo "head_sha=${{ github.event.after }}" >> "$GITHUB_OUTPUT"
             echo "base_sha=${{ github.event.before }}" >> "$GITHUB_OUTPUT"
+            echo "branch_name=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
           fi
           echo "ref=${{ github.ref }}" >> "$GITHUB_OUTPUT"
           echo "repo=${{ github.repository }}" >> "$GITHUB_OUTPUT"
-          echo "actor=${{ github.actor }}" >> "$GITHUB_OUTPUT"
 
       - name: Run ARMOR Tool
         uses: qualcomm-linux-stg/armor@main
@@ -49,3 +50,4 @@ jobs:
           base-sha:   ${{ steps.ev.outputs.base_sha }}
           ref:        ${{ steps.ev.outputs.ref }}
           repo:       ${{ steps.ev.outputs.repo }}
+          branch-name: ${{ steps.ev.outputs.branch_name }}

@@ -7,6 +7,7 @@ branches:
                 headers:
                     - Core/Modula/Common/Include/Common.h
                     - Core/Modula/Common/Include/Utils.h
+                    - Core/Framework/Include/*.h
             non-blocking:
                 headers:
                     - Core/Modula/Common/Include/ErrCodes.h
