@@ -10,12 +10,15 @@
 #include <stdint.h>
 #endif
 
+
 // Use these options to configure a well defined value
 #define OPT_WITHMAX 0x00000001
-#define OPT_WITHMIN 0x00000002
+
 
 // Used to define the new config value, relative to the already configured value
-#define OPT_WITHREL 0X00000004
+
+
+
 
 /**
  * @struct SysResource
@@ -60,7 +63,7 @@ enum RequestPriority {
     TEST_ENUM
 };
 
-double b;
+
 
 /**
  * @enum Modes
@@ -179,7 +182,6 @@ enum ResCodesDef {
     CLUSTER_PLUS_ALL_CORE        = 0x00000200,
     CLUSTER_PLUS_CORE_0          = 0x00000201, // First Core in Prime / Plus Cluster.
     CLUSTER_PLUS_CORE_1          = 0x00000202,
-    CLUSTER_PLUS_CORE_2          = 0x00000203,
     CLUSTER_PLUS_CORE_3          = 0x00000204,
 };
 
