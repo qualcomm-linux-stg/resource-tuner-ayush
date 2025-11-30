@@ -11,3 +11,13 @@ branches:
             non-blocking:
                 headers:
                     - Core/Modula/Common/Include/ErrCodes.h
+    latest_test:
+        modes:
+            blocking:
+                headers:
+                    - Core/Modula/Common/Include/Common.h
+                    - Core/Modula/Common/Include/Utils.h
+                    - Core/Framework/Include/*.h
+            non-blocking:
+                headers:
+                    - Core/Modula/Common/Include/ErrCodes.h

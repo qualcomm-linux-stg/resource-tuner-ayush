@@ -43,9 +43,11 @@ enum ErrCode {
     RC_REQUEST_PARSING_FAILED,
     RC_RESOURCE_NOT_SUPPORTED,
     RC_WORKER_THREAD_ASSIGNMENT_FAILURE,
-    RC_LOGICAL_TO_PHYSICAL_GEN_FAILED,
     RC_CGROUP_CREATION_FAILURE,
 };
+
+int a;
+double b;
 
 #define RC_IS_OK(rc) ({          \
     int8_t retval;               \
