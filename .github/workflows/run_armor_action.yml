@@ -11,18 +11,10 @@ permissions:
   statuses: write
   
 jobs:
-  print-shas:
+  RUN-ARMOR:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-
-      # Derive event-specific SHAs using the event payload.
-      # For pull_request:
-      #   head = github.event.pull_request.head.sha
-      #   base = github.event.pull_request.base.sha
-      # For push:
-      #   head = github.event.after
-      #   base = github.event.before
       - name: Set event variables
         id: ev
         run: |
@@ -45,7 +37,6 @@ jobs:
         uses: qualcomm-linux-stg/armor@main
         with:
           event-name: ${{ steps.ev.outputs.event_name }}
-          repo-token: ${{ secrets.QCOMLNXCI_PAT }}
           head-sha:   ${{ steps.ev.outputs.head_sha }}
           base-sha:   ${{ steps.ev.outputs.base_sha }}
           ref:        ${{ steps.ev.outputs.ref }}
