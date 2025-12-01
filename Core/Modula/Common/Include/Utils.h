@@ -26,8 +26,7 @@ enum RequestType {
     REQ_SIGNAL_RELAY
 };
 
-int a;
-
+double b;
 /**
  * @enum Permissions
  * @brief Certain resources can be accessed only by system clients and some which have
