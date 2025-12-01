@@ -57,11 +57,10 @@ enum RequestPriority {
     REQ_PRIORITY_HIGH = 0,
     REQ_PRIORITY_LOW,
     NUMBER_OF_RQUEST_PRIORITIES,
-    TEST_ENUM
 };
 
 double b;
-
+int a;
 /**
  * @enum Modes
  * @brief Represents the operational modes based on the device's display state.
