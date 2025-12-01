@@ -61,6 +61,7 @@ enum RequestPriority {
 };
 
 double b;
+int a;
 
 /**
  * @enum Modes
