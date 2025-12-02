@@ -57,9 +57,9 @@ enum RequestPriority {
     REQ_PRIORITY_HIGH = 0,
     REQ_PRIORITY_LOW,
     NUMBER_OF_RQUEST_PRIORITIES,
-    TEST_ENUM
 };
 
+int a;
 double b;
 
 /**
