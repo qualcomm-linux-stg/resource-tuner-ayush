@@ -36,12 +36,6 @@ typedef struct {
      *        - The next 8 bits (17-24) hold the Logical Cluster Value
      */
     int32_t mResInfo;
-    /**
-     * @brief Number of values to be configured for the Resource,
-     *        both single-valued and multi-valued Resources are supported.
-     */
-    int32_t mNumValues;
-
     union {
         int32_t value; //!< Use this field for single Valued Resources
         int32_t* values; //!< Use this field for Multi Valued Resources
