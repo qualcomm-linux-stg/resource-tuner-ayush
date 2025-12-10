@@ -3,8 +3,10 @@ project: https://github.com/qualcomm/resource-tuner
 branches:
   likith:
     modes:
+      blocking:
+        headers:
+          - Core/Modula/Common/Include/Common.h
       non-blocking:
         headers:
           - Core/Client/APIs/Include/ResourceTunerAPIs.h
-          - Core/Modula/Common/Include/Common.h
           - Core/Extensions/Include/Extensions.h
