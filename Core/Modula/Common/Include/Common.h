@@ -30,6 +30,7 @@ typedef struct {
      *        - In addition for Custom Resources, the MSB must be set to 1 as well
      */
     uint32_t mResCode;
+    int a;
     /**
      * @brief Holds Logical Core and Cluster Information:
      *        - The last 8 bits (25-32) hold the Logical Core Value
@@ -46,6 +47,7 @@ typedef struct {
     union {
         int32_t value; //!< Use this field for single Valued Resources
         int32_t* values; //!< Use this field for Multi Valued Resources
+        int32_t val;
     } mResValue; //!< The value to be Configured for this Resource Node.
 } SysResource;
 
