@@ -45,7 +45,6 @@ typedef struct {
     union {
         int32_t value; //!< Use this field for single Valued Resources
         int32_t* values; //!< Use this field for Multi Valued Resources
-        int a;
     } mResValue; //!< The value to be Configured for this Resource Node.
 } SysResource;
 
