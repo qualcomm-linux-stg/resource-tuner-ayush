@@ -7,4 +7,4 @@ branches:
         headers:
           - resource-tuner/Core/Client/APIs/Include/UrmAPIs.h
           - resource-tuner/Core/Modula/Common/Include/Common.h
-          - resource-tuner/Extensions/Include/Extensions.h
+          - resource-tuner/extensions/Include/Extensions.h
