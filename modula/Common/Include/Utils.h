@@ -32,7 +32,6 @@ enum RequestType {
     REQ_PROP_GET,
     REQ_SIGNAL_TUNING,
     REQ_SIGNAL_UNTUNING,
-    REQ_SIGNAL_RELAY
 };
 
 /**
@@ -89,7 +88,6 @@ enum TranslationUnit {
 typedef struct {
     int8_t mModuleID;
     int8_t mRequestType;
-    uint64_t mBufferSize;
     int64_t mHandle;
     char* mBuffer;
 } MsgForwardInfo;
@@ -102,7 +100,6 @@ typedef struct {
 
 // Global Typedefs: Declare Function Pointers as types
 typedef ErrCode (*EventCallback)(void*);
-typedef int8_t (*ServerOnlineCheckCallback)();
 typedef void (*MessageReceivedCallback)(int32_t, MsgForwardInfo*);
 
 #define HIGH_TRANSFER_PRIORITY -1
