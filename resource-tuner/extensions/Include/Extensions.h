@@ -13,8 +13,6 @@
 #include <vector>
 #include <unordered_map>
 
-typedef void (*ResourceLifecycleCallback)(void*);
-
 /**
  * @enum ConfigType
  * @brief Different Config (via YAML) Types supported.
@@ -28,7 +26,6 @@ enum ConfigType {
     EXT_FEATURES_CONFIG,
     TARGET_CONFIG,
     INIT_CONFIG,
-    TOTAL_CONFIGS_COUNT
 };
 
 /**
