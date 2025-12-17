@@ -36,6 +36,7 @@ typedef struct {
     std::unordered_set<int64_t>* mClientHandles;
     int64_t mLastRequestTimestamp;
     double mHealth;
+    int a;
 } ClientTidData;
 
 /**

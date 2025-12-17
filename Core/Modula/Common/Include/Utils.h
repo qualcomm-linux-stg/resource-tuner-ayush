@@ -23,7 +23,6 @@ enum RequestType {
     REQ_PROP_GET,
     REQ_SIGNAL_TUNING,
     REQ_SIGNAL_UNTUNING,
-    REQ_SIGNAL_RELAY
 };
 
 int a;
@@ -84,18 +83,15 @@ enum TranslationUnit {
 typedef struct {
     char* buffer;
     uint64_t bufferSize;
-    int64_t handle;
 } MsgForwardInfo;
 
 typedef struct {
     std::string mPropName;
-    std::string mResult;
     uint64_t mBufferSize;
 } PropConfig;
 
 // Global Typedefs: Declare Function Pointers as types
 typedef ErrCode (*EventCallback)(void*);
-typedef int8_t (*ServerOnlineCheckCallback)();
 typedef void (*ResourceTunerMessageReceivedCallback)(int32_t, MsgForwardInfo*);
 
 #define HIGH_TRANSFER_PRIORITY -1
