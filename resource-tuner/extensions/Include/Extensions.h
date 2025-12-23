@@ -28,7 +28,8 @@ enum ConfigType {
     EXT_FEATURES_CONFIG,
     TARGET_CONFIG,
     INIT_CONFIG,
-    TOTAL_CONFIGS_COUNT
+    TOTAL_CONFIGS_COUNT,
+    test
 };
 
 /**
