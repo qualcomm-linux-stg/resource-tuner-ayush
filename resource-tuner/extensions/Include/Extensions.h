@@ -13,6 +13,8 @@
 #include <vector>
 #include <unordered_map>
 
+#include <PropertiesRegistry.h>
+
 typedef void (*ResourceLifecycleCallback)(void*);
 
 /**
