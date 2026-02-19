@@ -28,7 +28,8 @@ enum ConfigType {
     EXT_FEATURES_CONFIG,
     TARGET_CONFIG,
     INIT_CONFIG,
-    TOTAL_CONFIGS_COUNT
+    TOTAL_CONFIGS_COUNT,
+    NEW_VAR
 };
 
 /**
@@ -79,7 +80,7 @@ public:
  *
  * \note This macro must be used in the Global Scope.
  */
-#define RESTUNE_REGISTER_TEAR_CB(resCode, resourceTearCallback) \
+#define RESTUNE_REGISTER_TEAR_CB(resCode, test) \
         static Extensions CONCAT(_resourceTear, resCode)(resCode, 1, resourceTearCallback);
 
 /**
