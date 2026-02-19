@@ -9,5 +9,6 @@ branches:
           - modula/Common/Include/Common.h
           - resource-tuner/extensions/Include/Extensions.h
       blocking:
+        headers:
           - modula/Common/Include/ErrCodes.h
           - modula/Common/Include/Utils.h

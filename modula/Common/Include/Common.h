@@ -22,6 +22,7 @@
  * @brief Used to store information regarding Resources / Tunables which need to be
  *        Provisioned as part of the tuneResources API.
  */
+
 typedef struct {
     /**
      * @brief A uniqued 32-bit (unsigned) identifier for the Resource.
