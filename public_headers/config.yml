@@ -5,7 +5,7 @@ branches:
     modes:
       non-blocking:
         headers:
-          - core/Client/APIs/Include/UrmAPIs.h
+          - client/APIs/Include/UrmAPIs.h
           - modula/Common/Include/Common.h
           - resource-tuner/extensions/Include/Extensions.h
       blocking:
