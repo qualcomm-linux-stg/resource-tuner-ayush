@@ -26,6 +26,7 @@ extern "C" {
 #endif
 
 #include "Common.h"
+#include "TEST_cate.h"
 
 /**
  * @brief Tune Resource Values for finite or finite duration.

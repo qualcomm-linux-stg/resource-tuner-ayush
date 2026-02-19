@@ -13,7 +13,7 @@
 #include <vector>
 #include <unordered_map>
 
-typedef void (*ResourceLifecycleCallback)(void*);
+typedef void (*ResourceLifecycleCallback)(void*, int*);
 
 /**
  * @enum ConfigType
