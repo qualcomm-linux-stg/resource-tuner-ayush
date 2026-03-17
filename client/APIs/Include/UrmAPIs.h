@@ -104,7 +104,7 @@ int8_t getProp(const char* prop, char* buffer, size_t bufferSize, const char* de
  *            - -1: If the Request could not be sent to the server.
  */
 int64_t tuneSignal(uint32_t signalCode, int64_t duration, int32_t properties,
-                   const char* appName, const char* scenario, int32_t numArgs, uint32_t* list);
+                   const char* appName, int32_t numArgs, uint32_t* list);
 
 /**
  * @brief Relay the signal to all the features subscribed to the signal with the given ID.
