@@ -111,9 +111,6 @@ int8_t getProp(const char* prop, char* buffer, size_t bufferSize, const char* de
 int64_t tuneSignal(uint32_t sigId,
                    uint32_t sigType,
                    int64_t duration,
-                   int32_t properties,
-                   const char* appName,
-                   const char* scenario,
                    int32_t numArgs,
                    uint32_t* list);
 
