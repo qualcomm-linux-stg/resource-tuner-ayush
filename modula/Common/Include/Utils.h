@@ -94,12 +94,6 @@ typedef struct {
     char* mBuffer;
 } MsgForwardInfo;
 
-typedef struct {
-    std::string mPropName;
-    std::string mResult;
-    uint64_t mBufferSize;
-} PropConfig;
-
 // Global Typedefs: Declare Function Pointers as types
 typedef ErrCode (*EventCallback)(void*);
 typedef int8_t (*ServerOnlineCheckCallback)();
